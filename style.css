@@ -1,0 +1,41 @@
+body {
+  position: relative;
+}
+
+/*** sidebar ***/
+#navBar {
+    position: fixed;
+    width: 20.8%;
+}
+.affix {
+	top: 20px;
+}
+
+.col-md-9 {
+    margin-left: 20.8%;
+/*	height: 2000px;
+	width: 30px;
+	
+	border: 2px solid black;
+*/
+}
+
+#navBar .nav {
+   
+    -webkit-transition-timing-function: ease-in-out; /* Safari */
+    transition-timing-function: ease-in-out;
+}
+
+#navBar .navShow {
+    height: 20px;
+    width: 20px;
+    background-color: green;
+}
+
+/** footer **/
+.scroll {
+    background-color: green;
+    display: none;
+    position: fixed;
+    margin-left: 600px
+}
