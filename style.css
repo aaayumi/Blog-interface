@@ -1,18 +1,45 @@
+
 body {
   position: relative;
+  background-color: gainsboro;
 }
+
+h2 {
+    font-size: 100px;
+    color: red;
+}
+
+h3 {
+    font-size: 80px;
+}
+
+ul {
+    list-style: none;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+button {
+    background:none;
+}
+
+button:focus {outline:0;}
 
 /*** sidebar ***/
 #navBar {
     position: fixed;
-    width: 20.8%;
-}
-.affix {
-	top: 20px;
+    width: 250px;
+    height: 50%;
+    background: white;
+    border: 1px solid black;
+    margin-top: 50px;
 }
 
 .col-md-9 {
-    margin-left: 20.8%;
+    margin-left: 30%;
 /*	height: 2000px;
 	width: 30px;
 	
@@ -21,16 +48,120 @@ body {
 }
 
 #navBar .nav {
-   
+   　display: none;
     -webkit-transition-timing-function: ease-in-out; /* Safari */
     transition-timing-function: ease-in-out;
 }
 
 #navBar .navShow {
-    height: 20px;
-    width: 20px;
+    height: 50px;
+    width: 50px;
     background-color: green;
+    border: none;
+    position: absolute;
+    left: 200px;
+    top: 0px;
 }
+
+.profile-image {
+    margin-left:-15px;
+    height: 210px;
+    width: 250px;
+    background: gray;
+}
+
+#navBar .nav {
+    height: 50px;
+    background-color: azure;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+#navBar h3 {
+    text-align: center;
+}
+
+#navBar .gray-text {
+    color:antiquewhite;
+}
+
+.socialmedia {
+    display: flex;
+    flex-direction: row;
+}
+
+.socialmedia li {
+    
+}
+
+/** blog title **/
+#blog {
+    background-color: azure;
+}
+
+.blogTitle {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#blog .postTitle {
+    font-weight: bold;
+}
+
+#blog a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+    color: black;
+}
+
+#blog .readmore, #blog .name {
+    color:aquamarine;
+}
+
+#blog .readmore {
+    padding-bottom: 50px;
+}
+
+#blog .post {
+    margin-bottom: 50px;
+}
+
+.load {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px #d9d9d9 dotted;
+    background-color: none;
+    margin: auto;
+    text-align: center;
+    margin-left: 250px;
+}
+
+.news-wrapper {
+   margin-bottom: 50px;
+}
+
+.newsLetterInput{
+    border: 10px green solid;
+    border-radius: 30px;
+    float: left;
+    box-sizing: border-box;
+    padding-right: 80px;
+    width: 300px;
+    padding-right: 50px;
+} 
+
+.newsLetterButton {
+    margin-left: -70px;
+    height: 45px;
+    border-radius: 20px;
+    width: 70px;
+    background: blue;
+    color: white;
+    border: 0;
+   
+}
+
 
 /** footer **/
 .scroll {
@@ -38,4 +169,11 @@ body {
     display: none;
     position: fixed;
     margin-left: 600px
+}
+
+.footer {
+    margin-top: 50px;
+    height: 150px;
+    background-color:azure;
+    margin-left: 30%;
 }

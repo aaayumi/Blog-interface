@@ -9,18 +9,18 @@
     <meta name="author" content="">
 
     <title>Blog Interface</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
-    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
     </head>
 
 <body>
     <div class="container">
          <div class="row">
                <div class="col-md-3" id="navBar">
-                    <img src="#" alt="profile-image" />
+                    <div class="profile-image">
+                    <img src="#" alt="profile-image" /></div>
                     <button class="navShow"></button>
-                    <ul class="nav nav-pills nav-stacked show" style="display: none;">
+                    <ul class="nav nav-pills nav-stacked show">
                         <li><a href="about.html">About</a></li>
                         <li><a href="work.html">Work</a></li>
                         <li><a href="contact.html">Contact</a></li>
@@ -28,7 +28,7 @@
     
                     <h3>Ayumi Saito</h3>
                     <p class="gray-text">Web Developer</p>
-
+                    <hr style="border-top: dotted 2px;" />
                     <ul class="socialmedia">
                         <li><a href="#section1">Facebook</a></li>
                         <li><a href="#section2">Twitter</a></li>
@@ -37,50 +37,52 @@
                     </ul>
                 </div><!-- col-md-3 -->
 
-            <div class="col-md-9">
-                <div class="blogTitle">My Blog</div>
-
-                <div id="postFirst">
-                <div class="postTitle"><a href="page.html">Why do you have to start a blog?</a></div>
-                <p> October 12, 2017 / by <a href="#">Ayumi Saito</a></p>
+            <div class="col-md-9" id="blog">
+                <h3 class="blogTitle">My Blog</h3>
+                <hr style="border-top: dotted 2px gray;" />
+                <div id="postFirst" class="post">
+                <h2 class="postTitle"><a href="page.html">Why do you have to start a blog?</a></h2>
+                <p> October 12, 2017 / by <a href="#" class="name">Ayumi Saito</a></p>
                 
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet erat nec odio suscipit hendrerit. In turpis lectus, condimentum sit amet elit at, mattis ultricies enim. Vivamus hendrerit felis eu ipsum convallis, vitae porttitor odio elementum. Etiam a laoreet diam. Etiam at leo enim. Maecenas blandit ipsum sed purus vestibulum, ut rutrum orci varius. Fusce consectetur ornare mauris, sed lobortis nulla laoreet id. Proin urna magna, luctus vitae sollicitudin a, accumsan non sem. Cras vitae nisi nec elit gravida congue. Quisque sollicitudin interdum libero, vitae pharetra nibh mollis volutpat. Fusce id metus et nisl ultricies malesuada. Duis at ornare risus. Fusce laoreet eu odio vitae mattis. </p>
-                 <a href="#">Read More</a>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet erat nec odio suscipit hendrerit. In turpis lectus, condimentum sit amet elit at, mattis ultricies enim. Vivamus hendrerit felis eu ipsum convallis, vitae porttitor odio elementum. Etiam a laoreet diam. Etiam at leo enim. Maecenas blandit ipsum sed purus vestibulum, ut rutrum orci varius. Fusce consectetur ornare mauris, sed lobortis nulla laoreet id. Proin urna magna, luctus vitae sollicitudin a, accumsan non sem. Cras vitae nisi nec elit gravida congue. Quisque sollicitudin interdum libero, vitae pharetra nibh mollis volutpat. Fusce id metus et nisl ultricies malesuada. Duis at ornare risus. Fusce laoreet eu odio vitae mattis.</p>
+                 <a href="page.html" class="readmore">Read More</a>
                 </div>
                 
                  <button class="scroll">Scroll up</button>
     
-                <div id="postSecond">
-                <div class="postTitle"><a href="#">Why do you have to start a blog?</a></div>
-                <p> October 12, 2017 / by <a href="#">Ayumi Saito</a></p>
+                <div id="postSecond" class="post">
+                <h2 class="postTitle"><a href="#">Why do you have to start a blog?</a></h2>
+                <p> October 12, 2017 / by <a href="#" class="name">Ayumi Saito</a></p>
     
                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet erat nec odio suscipit hendrerit. In turpis lectus, condimentum sit amet elit at, mattis ultricies enim. Vivamus hendrerit felis eu ipsum convallis, vitae porttitor odio elementum. Etiam a laoreet diam. Etiam at leo enim. Maecenas blandit ipsum sed purus vestibulum, ut rutrum orci varius. Fusce consectetur ornare mauris, sed lobortis nulla laoreet id. Proin urna magna, luctus vitae sollicitudin a, accumsan non sem. Cras vitae nisi nec elit gravida congue. Quisque sollicitudin interdum libero, vitae pharetra nibh mollis volutpat. Fusce id metus et nisl ultricies malesuada. Duis at ornare risus. Fusce laoreet eu odio vitae mattis. </p>
-                 <a href="#">Read More</a>
+                 <a href="page.html" class="readmore">Read More</a>
                  </div>
     
-                <div id="postThird">
-                <div class="postTitle"><a href="#">Why do you have to start a blog?</a></div>
-                <p> October 12, 2017 / by <a href="#">Ayumi Saito</a></p>
+                <div id="postThird" class="post">
+                <h2 class="postTitle"><a href="#">Why do you have to start a blog?</a></h2>
+                <p> October 12, 2017 / by <a href="#" class="name">Ayumi Saito</a></p>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet erat nec odio suscipit hendrerit. In turpis lectus, condimentum sit amet elit at, mattis ultricies enim. Vivamus hendrerit felis eu ipsum convallis, vitae porttitor odio elementum. Etiam a laoreet diam. Etiam at leo enim. Maecenas blandit ipsum sed purus vestibulum, ut rutrum orci varius. Fusce consectetur ornare mauris, sed lobortis nulla laoreet id. Proin urna magna, luctus vitae sollicitudin a, accumsan non sem. Cras vitae nisi nec elit gravida congue. Quisque sollicitudin interdum libero, vitae pharetra nibh mollis volutpat. Fusce id metus et nisl ultricies malesuada. Duis at ornare risus. Fusce laoreet eu odio vitae mattis. 
                 </p>
-                <a href="#">Read More</a>
+                <a href="page.html" class="readmore">Read More</a>
                 </div>
     
-                <div id="postFifth" style="display: none;">
-                <div class="postTitle"><a href="#">Why do you have to start a blog?</a></div>
-                <p> October 12, 2017 / by <a href="#">Ayumi Saito</a></p>
+                <div id="postFifth" class="post" style="display : none">
+                <h2 class="postTitle"><a href="#">Why do you have to start a blog?</a></h2>
+                <p> October 12, 2017 / by <a href="#" class="name">Ayumi Saito</a></p>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet erat nec odio suscipit hendrerit. In turpis lectus, condimentum sit amet elit at, mattis ultricies enim. Vivamus hendrerit felis eu ipsum convallis, vitae porttitor odio elementum. Etiam a laoreet diam. Etiam at leo enim. Maecenas blandit ipsum sed purus vestibulum, ut rutrum orci varius. Fusce consectetur ornare mauris, sed lobortis nulla laoreet id. Proin urna magna, luctus vitae sollicitudin a, accumsan non sem. Cras vitae nisi nec elit gravida congue. Quisque sollicitudin interdum libero, vitae pharetra nibh mollis volutpat. Fusce id metus et nisl ultricies malesuada. Duis at ornare risus. Fusce laoreet eu odio vitae mattis. 
                 </p>
-                <a href="#">Read More</a>
+                <a href="#" class="readmore">Read More</a>
                 </div>
     
-                <button class="load loadPost">Load more</button>
+                <button class="load loadPost">Load </button>
               
-                <div class="newsletter">
-                <input type="text" placeholder="Email Address" />
+                <div class="news-wrapper">
+                <input class="newsLetterInput" type="text" placeholder="Email Address" />
+                <input class="newsLetterButton" type="button" placeholder="Submit" />
                 <p>Subscribe to my weekly newsletter</p>
+                </div>
                 </div>
             
     
@@ -101,7 +103,6 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
-<script src='https://kimmobrunfeldt.github.io/progressbar.js'></script>
 <script src='index.js'></script>
 </body>
 
