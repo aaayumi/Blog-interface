@@ -11,14 +11,22 @@
     <title>Blog Interface</title>
     <link href="style.css" rel="stylesheet" type="text/css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
     </head>
 
 <body>
+    
+    <!-- Preloader -->
+    <div class="preloader">
+    <div class="rounder"></div>
+    </div>
+    <!--Preloader -->
+    
     <div class="container">
          <div class="row">
                <div class="col-md-3" id="navBar">
-                    <div class="profile-image">
-                    <img src="#" alt="profile-image" /></div>
+                    <div class="about-img" ><img  class="about-img"  src="./img/ayumi.JPG" alt="profile-image" /></div>
                     <button class="navShow"></button>
                     <ul class="nav nav-pills nav-stacked show">
                         <li><a href="about.html">About</a></li>
@@ -30,10 +38,12 @@
                     <p class="gray-text">Web Developer</p>
                     <hr style="border-top: dotted 2px;" />
                     <ul class="socialmedia">
-                        <li><a href="#section1">Facebook</a></li>
-                        <li><a href="#section2">Twitter</a></li>
-                        <li><a href="#section3">Linkedin</a></li>
-                        <li><a href="#section3">GitHub</a></li>
+                        <li><i class="fa fa-facebook" aria-hidden="true"><a href="#section1"></a></i>
+</li>
+                        <li><a href="#section2"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#section3"><i class="fa fa-linkedin" aria-hidden="true"></i>
+</a></li>
+                         <li><i class="fa fa-github fa-3x" aria-hidden="true"></i> </li>
                     </ul>
                 </div><!-- col-md-3 -->
 
@@ -79,10 +89,11 @@
                 <button class="load loadPost">Load </button>
               
                 <div class="news-wrapper">
-                <input class="newsLetterInput" type="text" placeholder="Email Address" />
-                <input class="newsLetterButton" type="button" placeholder="Submit" />
-                <p>Subscribe to my weekly newsletter</p>
+                <input class="newsLetterInput" type="text" value="Email Address" placeholder="Email Address" />
+                <input class="newsLetterButton" type="button" value="Submit" placeholder="Submit" />
+                <p class="subscribe">Subscribe to my weekly newsletter</p>
                 </div>
+                 
                 </div>
             
     
@@ -100,10 +111,10 @@
     </div><!-- container -->
 
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
-<script src='index.js'></script>
+<script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+<script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+<script type="text/javascript" src='index.js'></script>
 </body>
 
 </html>

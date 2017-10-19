@@ -1,3 +1,12 @@
+(function ($) {
+    'use strict';
+
+jQuery(document).ready(function () {
+
+// Preloader 
+$( ".preloader" ).delay(800).fadeOut( "slow", function() {
+});
+   
 // Show scroll up bar
   $(window).scroll(function() {
     if ($(this).scrollTop()< 100)
@@ -40,3 +49,7 @@ $("#navBar .navShow").click(function(){
     }
      console.log("click")
 })
+
+});
+
+})(jQuery);
