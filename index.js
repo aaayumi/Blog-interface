@@ -48,7 +48,7 @@ $("#navBar .navShow").click(function(){
          $("#navBar .nav").addClass("show");
     }
      console.log("click")
-})
+}) 
 
 });
 

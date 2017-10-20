@@ -1,7 +1,6 @@
 
 body {
   position: relative;
-  background-color: gainsboro;
 }
 
 h2 {
@@ -81,13 +80,13 @@ abbr {
     }
 }
 
+
 /*** sidebar ***/
 #navBar {
     position: fixed;
     width: 250px;
     height: 50%;
-    background: white;
-    border: 1px solid black;
+    background-color: #eeeeee !important;
     margin-top: 50px;
 }
 
@@ -100,8 +99,20 @@ abbr {
 */
 }
 
-#navBar .nav {
-   　display: none;
+.nav {
+   　display: none !important;
+    -webkit-transition-timing-function: ease-in-out; /* Safari */
+    transition-timing-function: ease-in-out;
+}
+
+#navBar .nav li {
+    margin-top: 10px;
+    -webkit-transition-timing-function: ease-in-out; /* Safari */
+    transition-timing-function: ease-in-out;
+}
+
+#navBar .nav.show {
+   　display: block;
     -webkit-transition-timing-function: ease-in-out; /* Safari */
     transition-timing-function: ease-in-out;
 }
@@ -125,31 +136,78 @@ abbr {
 
 #navBar .nav {
     height: 50px;
-    background-color: azure;
+    background-color: #c4c4c4;
     margin: 0;
+    margin-right: -15px;
+    margin-left: -15px;
     margin-bottom: 50px;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+     -webkit-transition-timing-function: ease-in-out; /* Safari */
+    transition-timing-function: ease-in-out;
+}
+
+#navBar .nav a {
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 20px;
 }
 
 #navBar h3 {
+    margin-top: 30px;
     text-align: center;
 }
 
 #navBar .gray-text {
-    color:antiquewhite;
+    color: #b9b9bb;
+    text-align: center;
 }
 
 .socialmedia {
     display: flex;
     flex-direction: row;
+    margin-left: -10px;
+}
+
+.socialmedia li  {
+  margin-right: 10px;
 }
 
 .socialmedia li i {
-   color: black; 
+    color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 7px;
+}
+.navShow {
+    color: white;
+}
+
+.fa-facebook {
+    background-color: #334f8d;
+}
+
+.fa-twitter {
+    background-color: #1997f0;
+}
+
+.fa-linkedin {
+    background-color: #006cac;
+}
+
+.fa-github {
+    background-color: #2d2d2d;
 }
 
 /** blog title **/
 #blog {
-    background-color: azure;
+    background-color: #eeeeee;
+}
+
+#blog h2, #blog h3, #blog p, #blog .readmore {
+    margin-left: 20px;
 }
 
 .blogTitle {
@@ -168,7 +226,7 @@ abbr {
 }
 
 #blog .readmore, #blog .name {
-    color:aquamarine;
+    color: #19b290;
 }
 
 #blog .readmore {
@@ -193,7 +251,7 @@ abbr {
 .news-wrapper {
    margin-bottom: 50px;
    margin-top: 50px;
-   margin-left: 180px;
+   margin-left: 300px;
 }
 
 .newsLetterInput{
@@ -219,10 +277,94 @@ abbr {
     border: 0;
 }
 
+.news-wrapper .subscribe　{
+    margin-left: 100px;
+}
+
+/** page **/
+#page {
+    background-color: #eeeeee !important;
+    width: 80%;
+    margin-top: 50px;
+}
+
+#page h3, #page h2 , #page p, #page h4{
+    margin-left: 20px;
+}
+
+.backHome {
+    margin-top: 30px;
+    margin-bottom: 30px;  
+}
+
+#page a {
+    color: #19b290;
+    text-decoration: none;
+}
+
+#page .postImg {
+    height: 200px;
+    width: auto;
+    margin-left: 300px;
+}
+
+#page .card {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 2px 2px 2px 2px #888888;
+    border: white;
+    padding: 10px 10px;
+    margin-left: 20px;
+}
+
+#page .postProfile {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#page .profileDetail {
+    margin-top: 20px;
+}
+
+.recommendation {
+    margin-top: 20px;
+}
+
+.recommendation ul {
+     display: flex;
+}
+
+.recommendation li {
+    flex-direction: row;
+    padding: 10px 10px;
+    height: 150px;
+    width: 200px;
+    border-radius: 10%;
+    border: 2px #19b290 dotted;
+    background-color: none;
+    text-align: center;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.recommendation  li {
+    font-size: 20px;
+}
+
 /** About me **/
 
 #about {
-    background-color: azure;
+    background-color: #eeeeee !important;
+    width: 80%;
+    margin-top: 50px;
+}
+
+#about h3 , #about h2, #about p{
+    margin-left: 20px;
 }
 
 .aboutTitle {
@@ -234,7 +376,7 @@ abbr {
     border-radius : 5px;   
     border : none;
     color : white;
-    padding: 10px 10px;
+    padding: 10px 20px;
     margin-right: 5px;
     margin-top: 20px;
     margin-bottom: 30px;
@@ -242,6 +384,7 @@ abbr {
 
 .aboutButton.one {
   background:  #f10796;
+  margin-left: 20px;
 }
 
 .aboutButton.two {
@@ -262,12 +405,34 @@ abbr {
    margin-left: -8px;
 }
 
+#about p {
+    margin-bottom: 40px;
+}
+
+#about ul {
+    margin-top: 20px;
+}
+
+#about ul li {
+    margin-top : 10px;
+}
+
 /** work **/
+#work {
+    background-color: #eeeeee !important;
+    width: 80%;
+    margin-top: 50px;
+}
+
+#work h2, #work h3 {
+     margin-left: 30px;
+}
 
 #portfolioFirst, #portfolioSecond, #portfolioThird, #portfolioFourth {
     display: flex;
     flex-direction: row;
     margin-top: 20px;
+    margin-left: 30px;
 }
 
 table tr td {
@@ -278,21 +443,36 @@ td {
     padding: 30px 30px;
 }
 .portfolio-img {
-    height: 200px; 
-    width: 250px;
+    height: 255px; 
+    width: 350px;
 }
 
 .loadPortfolio {
     margin-top: 20px;
 }
 
+.load {
+    margin-left: 400px;
+}
+
 /** contact **/
+#contact {
+    background-color: #eeeeee !important;
+    width: 80%;
+    margin-top: 50px;
+}
+
+#contact h3, #contact h2, #contact h4,  #contact p {
+    margin-left: 20px;
+}
+
 #contact .work-link {
      color:#19b290 !important;
 } 
 
 #contact h3 {
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .comment {
@@ -303,6 +483,7 @@ td {
     width: 350px;
     margin-bottom: 20px;
     margin-right: 20px;
+    margin-left: 20px;
 }
 
 .comment.one:before {
@@ -310,8 +491,8 @@ td {
     position: absolute;
     width: 0;
     height: 0;
-    left: 30px;
-    top: 600px;
+    left: 50px;
+    top: 670px;
     width: 0;
     height: 0;
     border-style: solid;
@@ -324,8 +505,8 @@ td {
     position: absolute;
     width: 0;
     height: 0;
-    left: 400px;
-    top: 600px;
+    left: 440px;
+    top: 670px;
     width: 0;
     height: 0;
     border-style: solid;
@@ -336,13 +517,14 @@ td {
 .comment.three {
     width: 350px !important;
 }
+
 .comment.three:before {
     content: ' ';
     position: absolute;
     width: 0;
     height: 0;
-    left: 30px;
-    top: 895px;
+    left: 50px;
+    top: 965px;
     width: 0;
     height: 0;
     border-style: solid;
@@ -368,24 +550,34 @@ td {
     flex-direction: row;
 }
 
+.contact-wrapper {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.contact-wrapper h2 {
+    margin-bottom: 20px;
+}
+
 #contact .contacts {
-    margin-right: 40px;
+    margin-right: 110px;
+    margin-left: 20px;
 }
 
 #contact .contacts i {
-    margin-right: 20px;
+    margin-right: 130px;
 }
 
 .phone i {
-    color: blue;
+    color: #079cf1;
 }
 
 .mail i {
-    color: orange;
+    color: #f86800;
 }
 
 .time i {
-    color: yellow;
+    color: #e7d67c;
 }
 
 .form-question {
@@ -394,34 +586,72 @@ td {
 }
 
 .form-question .question {
-     width: 40%;
+     width: 45%;
      box-sizing: border-box;
      margin-right: 20px;
      margin-bottom: 20px;
      box-shadow: 2px 2px 2px 2px #888888;
      border: white;
      padding: 10px 10px;
+     margin-left: 20px;
 }
+
+#contact select{
+    width: 95%;
+    height: 40px;
+    box-shadow: 2px 2px 2px 2px #888888;
+    border: white;
+    padding: 10px 10px;
+    margin-left: 20px;
+}
+
+#contact .message {
+    margin-top: 20px;
+    width: 95%;
+    height: 120px;
+    box-shadow: 2px 2px 2px 2px #888888;
+    border: white;
+    padding: 10px 10px;
+    margin-left: 20px;
+}
+
+.loadContact {
+    margin-top: 50px;
+}
+/** page **/
+#page {
+    background-color: #eeeeee !important;
+    width: 80%;
+    margin-top: 50px;
+}
+
+
 /** footer **/
 .scroll {
-    background-color: #19b290;
     display: none;
     position: fixed;
-    margin-left: 600px
+    color: #19b290;
+    border: none;
+    top: 800px;
+    right: 20px;
 }
 
 .footer {
     margin-top: 50px;
     height: 150px;
-    background-color:azure;
+    background-color: #eeeeee !important;
     margin-left: 30%;
+}
+
+.footer  ul a {
+   text-decoration: none;
 }
 
 .footer ul {
     padding-top: 50px;
-    margin-left: 150px;
+    margin-left: 280px;
 }
 
 .footer li {
-    margin-right: 30px;
+    margin-right: 50px;
 }
